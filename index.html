@@ -488,14 +488,14 @@ blockquote {
 	margin-top: 0.25em;
 }
 
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
 .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
 .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
 .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
 .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
 .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
 .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
@@ -547,6 +547,9 @@ blockquote {
 	color: rgba(212, 76, 71, 1);
 	fill: rgba(212, 76, 71, 1);
 }
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
 .highlight-gray_background {
 	background: rgba(241, 241, 239, 1);
 }
@@ -557,7 +560,7 @@ blockquote {
 	background: rgba(251, 236, 221, 1);
 }
 .highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
+	background: rgba(251, 237, 214, 1);
 }
 .highlight-teal_background {
 	background: rgba(237, 243, 236, 1);
@@ -614,6 +617,10 @@ blockquote {
 	color: rgba(212, 76, 71, 1);
 	fill: rgba(212, 76, 71, 1);
 }
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
 .block-color-gray_background {
 	background: rgba(241, 241, 239, 1);
 }
@@ -624,7 +631,7 @@ blockquote {
 	background: rgba(251, 236, 221, 1);
 }
 .block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
+	background: rgba(251, 237, 214, 1);
 }
 .block-color-teal_background {
 	background: rgba(237, 243, 236, 1);
@@ -647,11 +654,11 @@ blockquote {
 .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
 .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
 .select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
 .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
 .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
 .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
 .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
 .select-value-color-pageGlass { background-color: undefined; }
 .select-value-color-washGlass { background-color: undefined; }
@@ -674,4 +681,4 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="24237889-b1d9-43af-8055-0e6cd7581ef8" class="page sans"><header><h1 class="page-title">Портфолио</h1><p class="page-description"></p></header><div class="page-body"><h2 id="dfb68a2f-3375-46bf-afb4-bccce87f5601" class="">Виниченко Даниил</h2><ol type="1" id="97f0e281-69b1-4d13-b237-4c1391ace040" class="numbered-list" start="1"><li>Учебный проект <strong>“Сетевой интерфейс для видеокоммутатора Ross”</strong><p id="fb98aa54-4208-4fbe-b314-668ab6893f14" class=""><strong>Описание: </strong>Сервис по “перехвату” информации, передаваемой видеокоммутатором Ross. Одной из функций сервиса является звуковой аналог Tally Lights - озвучка номера камеры, которая переходит в режим Program (картинка с неё идёт в эфир)</p><p id="516b5b06-e470-458f-8648-c0b14a8d79bd" class=""><strong>Обязанности:</strong></p><ul id="b650b440-dd3b-4bea-aeab-ca8a416b1735" class="bulleted-list"><li style="list-style-type:disc">Тимлид</li></ul><ul id="03bbf0db-89c5-451f-835e-308d69d9afa5" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Python-разработчик</li></ul><p id="1cc292db-236c-4e85-86b7-76586120aaca" class=""><strong>Ссылка на Github: </strong><a href="https://github.com/GenryEden/RossServer">https://github.com/GenryEden/RossServer</a></p></li></ol><ol type="1" id="4aa75790-3d93-4a33-833f-e5ce22f0b49c" class="numbered-list" start="2"><li>Учебный проект <strong>“Веб-дашборд для VMix и видеокоммутатора Ross”</strong><p id="975f72c7-7fea-4c4c-a438-6e2d3a9d140c" class=""><strong>Описание: </strong>Дашборд собирает информацию об эфирной ситуации с программного микшера VMix (конкурент OBS&#x27;а) и коммутатора Ross (см. предыдущий проект). Вывод информации производится через веб-интерфейс.</p><p id="1a60c4e9-f35f-4f35-a284-bf0e9abce91f" class=""><strong>Обязанности:</strong></p><ul id="b310b4e9-2764-496f-8612-4a49fe8ac968" class="bulleted-list"><li style="list-style-type:disc">Фронтенд-разработчик</li></ul><ul id="be607a0c-ee58-457d-8376-07fc90086ac3" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Python-разработчик</li></ul><p id="6d619557-930b-42c1-8813-07dc238ecfa0" class=""><strong>Ссылка на Github:</strong> <a href="https://github.com/GrishaRubitel/DashboardTeleS">https://github.com/GrishaRubitel/DashboardTeleS</a></p></li></ol><ol type="1" id="3fe18cb9-6c5d-41cc-9a11-d7e8d5759a25" class="numbered-list" start="3"><li>Учебный проект <strong>“Русскоязычный аналог веб-игры Semantle”</strong><p id="8a2c51cb-3a76-4635-a64d-3d47e9907b53" class=""><strong>Описание:</strong> Простая словесная веб-игра, где нужно угадать слово, основываясь на её семантику. Анализ смыслов искомого и заданного пользователем слов реализован при помощи word2vec</p><p id="008d6cad-1e67-4d05-9601-778231f568bf" class=""><strong>Обязанности:</strong></p><ul id="b7f2bf34-7b11-4740-9284-68996d9bd57c" class="bulleted-list"><li style="list-style-type:disc">Фронтенд-разработчик</li></ul><ul id="6f494738-7576-4c8b-a540-56e0caa39afd" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Golang-разработчик</li></ul><p id="d73f8216-d631-4b20-a3e2-ea19e40b705c" class=""><strong>Ссылки на Github:</strong></p><ol type="a" id="07024c9c-fbc3-47c6-8538-069b5561ec76" class="numbered-list" start="1"><li><a href="https://github.com/GrishaRubitel/Semantle">https://github.com/GrishaRubitel/Semantle</a> (Фронтенд)</li></ol><ol type="a" id="1a4684aa-d730-48a7-b420-43477686d49e" class="numbered-list" start="2"><li><a href="https://github.com/GrishaRubitel/SemantleBack">https://github.com/GrishaRubitel/SemantleBack</a> (Бэкенд)</li></ol><p id="fa58be44-7cac-4c17-a474-482e279a3a4a" class=""><strong>Ссылка на сайт (ссылка должна быть активна):</strong> <a href="http://semantle.ru/">http://semantle.ru/</a></p></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</style></head><body><article id="08f01ef2-528f-478f-bbd7-25e15caab116" class="page sans"><header><h1 class="page-title">Портфолио</h1><p class="page-description"></p></header><div class="page-body"><h2 id="b903a524-41d8-4395-b484-89eae759c4ab" class="">Виниченко Даниил</h2><ol type="1" id="1109b38e-35cc-43d6-a29d-767d9c678528" class="numbered-list" start="1"><li>Учебный проект <strong>“Сетевой интерфейс для видеокоммутатора Ross”</strong><p id="04a3d69f-557f-4125-a805-999bd37cea88" class=""><strong>Описание: </strong>Сервис по “перехвату” информации, передаваемой видеокоммутатором Ross. Одной из функций сервиса является звуковой аналог Tally Lights - озвучка номера камеры, которая переходит в режим Program (картинка с неё идёт в эфир)</p><p id="ee77ce95-9541-4f44-aafd-1bc0731f1ae7" class=""><strong>Обязанности:</strong></p><ul id="66641ef9-15f0-481a-825b-63f92c52eb51" class="bulleted-list"><li style="list-style-type:disc">Тимлид</li></ul><ul id="b78f97f6-a412-4813-bf87-af6dec2c9b2e" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Python-разработчик</li></ul><p id="0d77784b-408b-45ed-b077-74b53668e283" class=""><strong>Ссылка на Github: </strong><a href="https://github.com/GenryEden/RossServer">https://github.com/GenryEden/RossServer</a></p></li></ol><ol type="1" id="1b9673e3-1471-4f55-805c-8337d6bf37f7" class="numbered-list" start="2"><li>Учебный проект <strong>“Веб-дашборд для VMix и видеокоммутатора Ross”</strong><p id="c5b75252-18d6-4544-8273-a3390aca4558" class=""><strong>Описание: </strong>Дашборд собирает информацию об эфирной ситуации с программного микшера VMix (конкурент OBS&#x27;а) и коммутатора Ross (см. предыдущий проект). Вывод информации производится через веб-интерфейс.</p><p id="e778ecec-a009-4a35-b09c-e5d684abdb5e" class=""><strong>Обязанности:</strong></p><ul id="1cc1050e-4921-4ea6-88e5-9957d494c190" class="bulleted-list"><li style="list-style-type:disc">Фронтенд-разработчик</li></ul><ul id="fbd462f9-274b-4fa0-b47a-aedd13d337e6" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Python-разработчик</li></ul><p id="d95c9173-9f0f-45f5-ac50-8bda059ed8ab" class=""><strong>Ссылка на Github:</strong> <a href="https://github.com/GrishaRubitel/DashboardTeleS">https://github.com/GrishaRubitel/DashboardTeleS</a></p></li></ol><ol type="1" id="8a4be8bb-ea3a-4bbc-8dd4-c47f0d082876" class="numbered-list" start="3"><li>Учебный проект <strong>“Русскоязычный аналог веб-игры Semantle”</strong><p id="07e0bcea-d10f-4841-bd6e-cd111caafa29" class=""><strong>Описание:</strong> Простая словесная веб-игра, где нужно угадать слово, основываясь на её семантику. Анализ смыслов искомого и заданного пользователем слов реализован при помощи word2vec</p><p id="9b490b4f-98f1-49ac-8430-cb734f590848" class=""><strong>Обязанности:</strong></p><ul id="5da46d25-4f80-4eca-97e7-9264374f4203" class="bulleted-list"><li style="list-style-type:disc">Фронтенд-разработчик</li></ul><ul id="3dcfbe5f-5a07-4b36-b3bb-17a50cc755b3" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Golang-разработчик</li></ul><p id="aa4d35a5-4d29-4871-bc33-82b122c2b62d" class=""><strong>Ссылки на Github:</strong></p><ol type="1" id="3c18f610-7210-4971-86b7-5d04ef27da7e" class="numbered-list" start="1"><li><a href="https://github.com/GrishaRubitel/Semantle">https://github.com/GrishaRubitel/Semantle</a> (Фронтенд)</li></ol><ol type="1" id="cd9dbfda-df43-49ce-9acc-e4ed210de816" class="numbered-list" start="2"><li><a href="https://github.com/GrishaRubitel/SemantleBack">https://github.com/GrishaRubitel/SemantleBack</a> (Бэкенд)</li></ol><p id="ea7031d6-7a66-4290-93e7-00c1ff130b06" class=""><strong>Ссылка на сайт (ссылка может быть неактивна):</strong> <a href="http://semantle.ru/">http://semantle.ru/</a></p></li></ol><ol type="1" id="8d3f506c-032d-4e50-bdc1-6faf0f4da7ef" class="numbered-list" start="4"><li>Учебный проект<strong> “Nexign Bootcamp”</strong><p id="9aa1da15-bf9d-460c-a7dc-30a981b4b1bb" class=""><strong>Описание: </strong>Упрощенный прототип биллинговой системы расчёта звонков с приминением микросервисной архитектуры.</p><p id="a3b03299-480a-4fa0-b1d3-3821688ce871" class=""><strong>Обязанности: </strong></p><ul id="a7316088-14b6-41da-93a2-7ad9b3989cbe" class="bulleted-list"><li style="list-style-type:disc">Бэкенд Java-разработчик</li></ul><ul id="7999a6ea-9909-42ad-8b0e-4f856a93c4a1" class="bulleted-list"><li style="list-style-type:disc">Архитектор базы данных</li></ul><p id="4d1a9ae5-2b57-4f15-a3c9-f2142ec0e554" class=""><strong>Стек технологий</strong></p><ul id="af47faea-3173-4694-acdd-6d8662dbedad" class="bulleted-list"><li style="list-style-type:disc">Java + Spring</li></ul><ul id="490b4236-ba40-441c-be60-624c1d4b3383" class="bulleted-list"><li style="list-style-type:disc">PostgreSQL</li></ul><ul id="4c34e562-e698-485b-8421-f1d22c019584" class="bulleted-list"><li style="list-style-type:disc">OpenAPI</li></ul><ul id="4481788b-a72b-43d4-91e8-25ed77fe52bb" class="bulleted-list"><li style="list-style-type:disc">Docker</li></ul><ul id="d3377588-f60e-4266-a68f-fcd1cf6541fb" class="bulleted-list"><li style="list-style-type:disc">Kafka</li></ul><ul id="61e52303-9dd2-4cf3-9481-7e06f9a7e7eb" class="bulleted-list"><li style="list-style-type:disc">Nginx</li></ul><p id="ce1f0897-9ec2-4d6c-b45e-407838a752a7" class=""><strong>Ссылки на Github:</strong></p><ol type="1" id="0d8fffc5-3c0b-4019-9d3a-c86de3d15af5" class="numbered-list" start="1"><li><a href="https://github.com/GrishaRubitel/NexignBootcampProj">https://github.com/GrishaRubitel/NexignBootcampProj</a> (Версия для запуска из IDE)</li></ol><ol type="1" id="126a7478-ba79-45b4-9f5c-9afc9e012b94" class="numbered-list" start="2"><li><a href="https://github.com/GrishaRubitel/BootcampShowcase">https://github.com/GrishaRubitel/BootcampShowcase</a> (Версия для Docker, расписана README)</li></ol></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
